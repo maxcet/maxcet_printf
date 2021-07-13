@@ -16,8 +16,3 @@ int	ft_strlen(const char *s1)
 		i++;
 	return (i);
 }
-
-
-
-
-

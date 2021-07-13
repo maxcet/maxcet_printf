@@ -19,7 +19,7 @@ int	ft_printf(const char *format, ...)
 		while (format[index] == '%')
 		{
 			if (ft_define_format(format[index + 1]) == 1)
-				ft_print_arg(&bytes, &index , args, format);
+				ft_print_arg(&bytes, &index, args, format);
 			if (format[index] == '%')
 			{	
 				index += 2;
@@ -33,11 +33,10 @@ int	ft_printf(const char *format, ...)
 
 int	ft_define_format(char c)
 {
-	int	i;
-	char *CONV;
+	int		i;
+	char	*CONV;
 
 	CONV = "cspdiuxX";
-
 	i = 0;
 	while (CONV[i] != '\0')
 	{

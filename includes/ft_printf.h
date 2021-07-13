@@ -18,12 +18,10 @@ void	ft_putnbr_x(unsigned int n, int *bytes);
 void	ft_putnbr_xx(unsigned int n, int *bytes);
 void	ft_putnbr(int n, int *bytes);
 
-
 int		ft_printf(const char *format, ...);
 int		ft_putchar(char c, int *bytes);
 int		ft_strlen(const char *s1);
 int		*ft_print_arg(int *bytes, int *index, va_list args, const char *format);
 int		ft_define_format(char c);
-
 
 #endif
