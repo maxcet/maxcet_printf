@@ -23,5 +23,6 @@ int		ft_putchar(char c, int *bytes);
 int		ft_strlen(const char *s1);
 int		*ft_print_arg(int *bytes, int *index, va_list args, const char *format);
 int		ft_define_format(char c);
+void	ft_kostil(int *index, int *bytes);
 
 #endif
