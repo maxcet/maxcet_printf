@@ -19,7 +19,7 @@ int	ft_printf(const char *format, ...)
 		while (format[index] == '%')
 		{
 			if (ft_define_format(format[index + 1]) == 1)
-				ft_print_arg(&bytes, &index , args, format);
+				ft_print_arg(&bytes, &index, args, format);
 			if (format[index] == '%')
 				ft_kostil(&index, &bytes);
 		}
@@ -28,7 +28,7 @@ int	ft_printf(const char *format, ...)
 	return (bytes);
 }
 
-void ft_kostil(int *index, int *bytes)
+void	ft_kostil(int *index, int *bytes)
 {	
 	*index += 2;
 	ft_printf_per(bytes);
